@@ -1,0 +1,42 @@
+<Doctype html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <style> 
+            body
+            {
+                background-color: rgba(86, 152, 128, 0.63);
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+        <!-- 
+            How to add a video: Same as Audio!
+            Autoplay attribute isn't supported :(
+            Poster attribute appears until the video actually starts!
+
+            Track tag is to add Translation to the video
+            srclang => The language
+            label => language name
+        -->
+
+        <video controls autoplay loop width="600" height="400" poster="C:\Users\SAMER YASER\Desktop\Screenshot 2023-05-22 161203.png">
+            <source src="C:\Users\SAMER YASER\Desktop\GoPro HERO5 + Karma- The Launch in 4K.mp4" type = "audio/mpeg">
+            <source src="C:\Users\SAMER YASER\Desktop\GoPro HERO5 + Karma- The Launch in 4K.ogg" type = "audio/ogg">
+            Your browser doesn't support video tags!
+            <track src = "blablabla_en.vtt" kind = "subtitles" srclang = "en" label = "English">
+            <track src = "blablabla_it.vtt" kind = "subtitles" srclang = "it" label = "Italian">
+
+        </video>
+
+
+    </body>
+
+</html>

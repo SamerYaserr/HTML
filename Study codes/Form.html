@@ -1,0 +1,292 @@
+<Doctype html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <style> 
+            body
+            {
+                background-color: rgba(86, 152, 128, 0.63);
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+         <!-- 
+            What if you wanted to make a form?
+            1. form tag
+                - Action attribute => the place (URL) where the information that I have taken from the user should be sent to
+                - novalidate => You can submit without inserting info in any field
+                - target = "_blank" => when you submit, you by default go to a new page
+                - method attribute:
+                    -- method = "GET" => The info will appear in the URL as a query string parameters
+                    -- method = "POST" => The info will not apprear in the URL ( will be hidden )
+
+
+            2. input tag => Inline element
+                - Type attribute => To choose the type of the input 
+                - required attribute => You can't submit unless you have entered the required inputs!
+                - placeholder attribute => an initially written text in the input field (description)
+                - name => I necessary attribute, you tell your backend dev teammate what is the information you have sent him
+                - value => an initialy written text in the input field (information)
+                - readonly => you can't write in this field, Info can be sent normaly
+                - disabled => //   //      //    // //   //, but info can't be sent to the server
+                - autofocus => Initialy you will be autofocused on a field
+                - minlength => you can't write less than x characters
+                - maxlength => you can't write more than x characters
+                - checked => Used with radio typed input to initialy check one of the radio options
+                - Id & for => To link the label with the input
+                - list attribue => you can make a list of something,
+                  by using datalist tag with id = the attribute list, then use option tags,
+                by using the list attribute you can search for the option you want.
+
+                *types :-text
+                        -password
+                        -email
+                        -color
+                        -range
+                        -number
+                        -reset
+                        -submit
+                        -hidden
+                        -radio
+                        -checkbox
+                        -file
+                        -search
+                        -url
+                        -date
+                        -month
+                        -time
+
+
+            3. Label tag => What is the input you want the user to enter
+
+            4. Select tag => To select one option from multiple options
+                - Option tag => To enter the option 
+                - Option group tag => To make group of options
+                - value  attribute (for option tag) =>I necessary attribute, you tell your backend dev teammate what is the information you have sent him
+                - multiple attribute => The user can choose multiple option from the given options
+                - selected attribute => initialy select an option
+            
+            5. textarea rag => Creates an area to write what ever you want ( usually a user comment )
+
+            If you wanted to change a previous value you can add the attribute value and write in it the previous value.
+        -->
+
+        Sign up
+
+        <hr>
+
+        <form action="CyperSecuritySamer.com" method="POST" target="_blank">
+
+            <div>
+                <input type="hidden" value="1113" name="id">
+            </div>
+            
+            <div>
+                <label>Username</label>
+                <input type="text" required placeholder="Username" name="username" autofocus>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Subject</label>
+                <input type="text" name="subject" value="math" readonly>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password" >Password</label>
+                <input id="password" type="password" required placeholder="Write c complex password" name="password" minlength="6" maxlength="12">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="Write a vaild email" value="OldEmail@gmail.com" name="email">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Color</label>
+                <input type="color" name="color">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="0" max="100" step="20" value="0">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Number</label>
+                <input type="number" name="number" min="0" max="200" step="10" value="0">
+            </div>
+
+            <br>
+
+            <div>
+
+                Your operating system:
+
+                <div>
+                    <input id="windows" type="radio" name="os" value="Windows" checked>
+                    <label for="windows" >Windows</label>
+                </div>
+
+                <div>
+                    <input id="linux" type="radio" name="os" value="Linux">
+                    <label for="linux" >Linux</label>
+                </div>
+
+                <div>
+                    <input id="mac" type="radio" name="os" value="Mac">
+                    <label for="mac" >Mac</label>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div>
+
+                Languages you learn:
+
+                <div>
+                    <input id="HTML" type="checkbox" name="Language" value="HTML">
+                    <label for="HTML" >HTML</label>
+                </div>
+
+                <div>
+                    <input id="c++" type="checkbox" name="Language" value="C++" checked>
+                    <label for="c++" >C++</label>
+                </div>
+
+                <div>
+                    <input id="js" type="checkbox" name="Language" value="NodeJS">
+                    <label for="js" >NodeJS</label>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div>
+
+            
+                <label for="country">Chosse Your country</label>
+
+                <select name="Country" id="country">
+
+                    <optgroup label="بلادأعظم امة لخاتم النبيين">
+                        <option value="ام الدنيا">Egypt</option>
+                        <option value="بيت الاقصى" selected>Palestine</option>
+                        <option value="بلد سيدنا ومولانا صلى الله عليه وسلم">Kingdom of Saudi Arabia</option>
+                    </optgroup>
+                    <optgroup label="خاب وخسر">
+                        <option value="المنافقين">America</option>
+                        <option value="البسكلتات">Germany</option>
+                        <option value="الخاسرين">England</option>
+                    </optgroup>
+
+                </select>
+
+            </div>
+
+            <br>
+
+            <div>
+                <textarea name="How you know about us" cols="30" rows="10" placeholder="How you know about us"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+
+                <label for="file">Upload</label>
+                <input type="file" id="file">
+
+            </div>
+
+            <br>
+
+            <div>
+
+                <label for="search">Search</label>
+                <input type="search" id="search">
+
+            </div>
+
+            <br>
+
+            <div>
+                <label for="url">URL</label>
+                <input type="url" id="url">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="month">Month</label>
+                <input type="month" id="month">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="time">Time</label>
+                <input type="time" id="time">
+            </div>
+
+            <br>
+
+            <div>
+
+                <input list="programming" name="programming">
+
+                <datalist id="programming">
+                    <option value="Python">
+                    <option value="PHP">
+                    <option value="C#">
+                    <option value="C++">
+                    <option value="HTML">
+                </datalist>
+
+            </div>
+
+
+
+            <br>
+
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Sign up">
+            </div>
+
+
+        </form>
+
+        <hr>
+
+    </body>
+
+</html>

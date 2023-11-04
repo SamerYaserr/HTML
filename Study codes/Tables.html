@@ -1,0 +1,116 @@
+<Doctype html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <style> 
+            body
+            {
+                background-color: rgba(86, 152, 128, 0.63);
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+
+        <!-- 
+            thead
+            tbody
+            tfoot
+            tr => Table Row
+            td => Table Data Cell
+            th => Table Header Cell, Makes the font Bold to
+            There are attributes like Border = "1" but in CSS better!
+        -->
+
+
+        <table>
+
+            <caption>Students Marks</caption>
+
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Samer</td>
+                    <td>Yaser</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Sahad</td>
+                    <td>Yaser</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Samer</td>
+                    <td>Zagloul</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>total</td>
+                    <td></td>
+                    <td>285</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+-----------------------------------------------------
+
+        <table border="1">
+
+        <caption>Students Marks</caption>
+
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Samer</td>
+                <td>Yaser</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Sahad</td>
+                <td>Yaser</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Samer</td>
+                <td>Zagloul</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!-- To merge 2 cells -->
+                <td colspan="2">total</td>
+                <td>285</td>
+            </tr>
+        </tfoot>
+
+        </table>
+
+
+    </body>
+
+</html>

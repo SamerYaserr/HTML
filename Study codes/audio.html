@@ -1,0 +1,52 @@
+<Doctype html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <style> 
+            body
+            {
+                background-color: rgba(86, 152, 128, 0.63);
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+         <!-- 
+            How to add an audio:
+            1. Use the audio tag
+            2. Use the source tag to add different sources for the audio:
+            source attributes:
+                1. Src 
+                2. type => The MIMI type of the audio, Google it 
+                Use this link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types"
+            
+            We add many soucres so the browser selects the better extenction type for him ( mp3, ogg, etc...)
+            All browsers supports mp3.
+
+            You should add a line at the end of audio tag, 
+            if the browser doesn't support any of the sources you provided
+            it appears.
+
+            Audio Attributes:
+                1. Controls
+                2. Autoplay, sadly it is not supported anymore!
+                3. Loop
+                4. Muted
+        -->
+
+        <audio controls autoplay loop>
+            <source src="C:\Users\SAMER YASER\Desktop\الشيخ حجاج الهنداوي الذاريات والنازعات ديرب السوق 2012 م.mp3" type = "audio/mpeg">
+            <source src="C:\Users\SAMER YASER\Desktop\الشيخ حجاج الهنداوي الذاريات والنازعات ديرب السوق 2012 م.ogg" type = "audio/ogg">
+            Your browser doesn't support audio tags!
+        </audio>
+
+
+    </body>
+
+</html>
