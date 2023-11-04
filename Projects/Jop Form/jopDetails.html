@@ -1,0 +1,234 @@
+<Doctype html>
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <style> 
+            body
+            {
+                background-color: rgba(86, 152, 128, 0.63);
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+        <form target="_blank">
+
+            <table border="1">
+
+                <caption>Jop Details:</caption>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <label for="jop_title">Jop Title</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="jopTitle" id="jop_title">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="description">Description</label>
+                        </td>
+
+                        <td colspan="3">
+                            <textarea name="description" id="description" rows="4" cols="30"></textarea>
+                            <br><br>
+                            Brief Description should have at most 500 characters
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="company">Company Name</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="companyName" id="company">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="contactNumber">Contact Number</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="contactNumber" id="contactNumber">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="contactPerson">Contact Person</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="contactPerson" id="contactPerson">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="email" name="email" id="email">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label>Work Status</label>
+                        </td>
+
+                        <td colspan="3">
+
+                            <input type="radio" value="fullTime" name="workStatus">
+                            <label for="fullTime">Full Time</label>
+
+                            <input type="radio" value="partTime" name="workStatus">
+                            <label for="partTime">Part Time</label>
+
+                            <input type="radio" value="perDim" name="workStatus">
+                            <label for="perDim">Per Dim</label>
+
+                            <input type="radio" value="others" name="workStatus">
+                            <label for="others">Others</label>
+                            
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="salary">Salary</label>
+                        </td>
+
+                        <td>
+
+                            <input type="text" id="salary">
+
+                            <select name="salarytype" id="salaryType">
+
+                                <option value="EG Pound" selected>EG Pound</option>
+                                <option value="US Doller">US Doller</option>
+                                <option value="Euro">Euro</option>
+                            
+                            </select>
+
+                            <select name="salaryRoutin" id="salaryRoutin">
+
+                                <option value="Yearly">Yearly</option>
+                                <option value="Monthly" selected>Monthly</option>
+                                <option value="Hourly">Hourly</option>
+
+                            </select>
+                            
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <label for="experience">Experience(Years)</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="experience" id="experience">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="location">Location</label>
+                        </td>
+
+                        <td colspan="3">
+                            <input type="text" name="location" id="location">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="qualifications">Qualifications</label>
+                        </td>
+
+                        <td colspan="3">
+
+                            <select name="addQualifi" id="addQualifications">
+
+                                <option value="any">Any</option>
+                                <option value="highSchool">High School</option>
+                                <option value="associate">Associate</option>
+                                <option value="preBachelors">Pre Bachelors</option>
+
+                            </select>
+
+                            <input type="button" name="addQualifi" value="ADD>>">
+                            <input type="button" name="removeQualifi" value="<<Remove">
+
+                            <select name="removeQualifi" id="removeQualifications">
+
+                                <option value="any">Any</option>
+
+                            </select>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+                <tfoot>
+
+                
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+
+                </tfoot>
+               
+            </table>
+
+        </form>
+
+        
+    </body>
+
+</html>
